@@ -1,0 +1,15 @@
+td {
+    border: 1px solid blue;
+    height: 33vh;
+  }
+  
+  td:hover {
+    background: orange;
+  }
+  
+  table {
+    width: 80vw;
+    border: 1px solid green;
+    margin-left: auto;
+    margin-right: auto;
+  }
