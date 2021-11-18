@@ -4,6 +4,14 @@ body{
   color: #aba1ac;
   background-image: url('assets/512724.png');
 }
+@keyframes transicaoInicial {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 header h1{
   width: fit-content;
   margin-right:auto;
@@ -15,16 +23,18 @@ div.container{
   font-weight: 600;
 }
 td {
-    border: 2px solid #ccccd8;
-    height: 70px;
-    width:250px;
-    text-align: center;
-    font-size: 5vw;
+  border: 2px solid #ccccd8;
+  height: 70px;
+  width:250px;
+  text-align: center;
+  font-size: 5vw;
   }
-  
 td:hover {
   background: #79849c8c;
   cursor: pointer;
+}
+.included{
+  animation: transicaoInicial 0.5s ease-in-out;
 }
 table {
   width: 300px;

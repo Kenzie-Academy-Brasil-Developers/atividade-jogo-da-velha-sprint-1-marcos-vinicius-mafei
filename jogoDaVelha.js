@@ -44,11 +44,16 @@ function checkDraw() {
     }
     currentPlayer= nextPlayer
     div.innerHTML= currentPlayer
+    const tds = document.getElementsByTagName('td')
+    for(let i = 0; i < tds.length; i++){
+        tds[i].classList.remove('included')
+    }
  }
 const handleClick = function (event) {
 	const cell = event.target;
     if(cell.innerHTML === ''){
         cell.innerHTML = currentPlayer;
+        cell.classList.add('included')
         if (currentPlayer === 'X' ) {
             playerSelections = playerXSelections;
             nextPlayer = 'O';
@@ -71,7 +76,7 @@ const handleClick = function (event) {
                 const ovictories = document.getElementById('playerO')
                 ovictories.innerHTML = 'Vitórias do O:'+vitoriaO 
             }
-            window.alert('O vencedor é '+currentPlayer+'! \n Reinicie o jogo e tente de novo!')
+            window.alert('O vencedor é '+currentPlayer+'! \nReinicie o jogo e tente de novo!')
             resetGame()
         }else if(checkDraw()===true){
             window.alert('Deu empate!')
