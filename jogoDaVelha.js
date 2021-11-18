@@ -72,12 +72,14 @@ const handleClick = function (event) {
                 ovictories.innerHTML = 'Vitórias do O:'+vitoriaO 
             }
             window.alert('O vencedor é '+currentPlayer+'! \n Reinicie o jogo e tente de novo!')
+            resetGame()
         }else if(checkDraw()===true){
             window.alert('Deu empate!')
             empates+=1
             console.log('empate!!!')
             const Numempates = document.getElementById('empates')
             Numempates.innerHTML = 'Empates:'+empates
+            resetGame()
         }else{
             currentPlayer = nextPlayer;
             div.innerHTML= nextPlayer

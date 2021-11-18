@@ -1,6 +1,8 @@
 body{
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  color: #aba1ac;
+  background-image: url('assets/512724.png');
 }
 header h1{
   width: fit-content;
@@ -10,49 +12,60 @@ header h1{
 div.container{
   text-align:center;
   margin-bottom: 50px;
+  font-weight: 600;
 }
 td {
-    border: 1px solid blue;
-    height: 10vh;
-    width:30vw;
+    border: 2px solid #ccccd8;
+    height: 70px;
+    width:250px;
     text-align: center;
     font-size: 5vw;
   }
   
-  td:hover {
-    background: orange;
-    cursor: pointer;
+td:hover {
+  background: #79849c8c;
+  cursor: pointer;
+}
+table {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+div.but{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+button{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+  color: #ccccd8;
+}
+button:hover{
+  cursor: pointer;
+}
+@media only screen and (min-width:650px){
+  body {
+    font-size: 22px;
   }
-  
-  table {
-    width: 60vw;
-    border: 1px solid green;
-    margin-left: auto;
-    margin-right: auto;
+  div.container{
+    margin-top: -100px;
   }
-  div.but{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  td{
+    height: 100px;
+    width: 200px;
   }
-  button{
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
+}
+@media only screen and (min-width:1000px){
+  td{
+    height: 200px;
   }
-  button:hover{
-    cursor: pointer;
+  table{
+    width: 800px;
   }
-  @media only screen and (min-width:650px){
-    body {
-      font-size: 24px;
-    }
-    div.container{
-      margin-top: -100px;
-    }
-    td{
-      height: 25vh;
-      width: 33vw;
-    }
-  }
+}
