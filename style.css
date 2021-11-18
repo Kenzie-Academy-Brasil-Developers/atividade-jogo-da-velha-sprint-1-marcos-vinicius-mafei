@@ -1,15 +1,58 @@
+body{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header h1{
+  width: fit-content;
+  margin-right:auto;
+  margin-left: auto;
+}
+div.container{
+  text-align:center;
+  margin-bottom: 50px;
+}
 td {
     border: 1px solid blue;
-    height: 33vh;
+    height: 10vh;
+    width:30vw;
+    text-align: center;
+    font-size: 5vw;
   }
   
   td:hover {
     background: orange;
+    cursor: pointer;
   }
   
   table {
-    width: 80vw;
+    width: 60vw;
     border: 1px solid green;
     margin-left: auto;
     margin-right: auto;
+  }
+  div.but{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  button{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  @media only screen and (min-width:650px){
+    body {
+      font-size: 24px;
+    }
+    div.container{
+      margin-top: -100px;
+    }
+    td{
+      height: 25vh;
+      width: 33vw;
+    }
   }

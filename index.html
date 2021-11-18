@@ -8,6 +8,19 @@
     <title>Jogo Da Velha</title>
 </head>
 <body>
+    <header>
+        <h1>Jogo da Velha</h1>
+        <ul>
+            <li id='playerX'>Vitórias do X:</li>
+            <li id='playerO'>Vitórias do O:</li>
+            <li id='empates'>Empates:</li>
+        </ul>
+    </header>
+    <div class="container">
+        <p>Agora é a rodada do:</p>
+        <div id="jogador"></div>
+    </div>
+
     <table>
         <tr>
             <td id="1"></td>
@@ -25,6 +38,9 @@
             <td id="9"></td>
         </tr>
     </table>
+    <div class="but">
+        <button id="btn">Reiniciar</button>   
+    </div>
     <script src="jogoDaVelha.js"></script>
 </body>
 </html>
