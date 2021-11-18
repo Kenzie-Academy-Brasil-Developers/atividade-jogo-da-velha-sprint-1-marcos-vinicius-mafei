@@ -25,7 +25,7 @@ div.container{
 td {
   border: 2px solid #ccccd8;
   height: 70px;
-  width:250px;
+  width: 90px;
   text-align: center;
   font-size: 5vw;
   }
@@ -68,7 +68,8 @@ button:hover{
   }
   td{
     height: 100px;
-    width: 200px;
+    width: 90px;
+    font-size: 5vw;
   }
 }
 @media only screen and (min-width:1000px){
